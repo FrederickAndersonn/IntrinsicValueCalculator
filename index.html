@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all">
+        <div class="header">Intrinsic Value Calculator (Discounted Free Cash Flow Method 20 Years)</div>
+        <div class="informations">
+            <div class="putinfo">
+                <div class="title">Enter Data</div>
+                <div class="info">
+                <div class="description">Name of stock </div>
+                <input type="text" id="name">
+                </div>
+                <div class="info">
+                    <div class="description">Stock Symbol </div>
+                    <input type="text" id="symbol">
+                </div>
+                <div class="info">
+                    <div class="description">Free Cash Flow (Current) </div>
+                    <input type="text" id="cash-flow">
+                </div>
+                <div class="info">
+                    <div class="description">Total Debt(ST + LT Debt) </div>
+                    <input type="text" id="debt">
+                </div>
+                <div class="info">
+                    <div class="description">Cash and ST Investments </div>
+                    <input type="text" id="investments">
+                </div>
+                <div class="info">
+                    <div class="description">Free CF Growth Rate 1-5years </div>
+                    <input type="text" id="growth5">
+                </div>
+                <div class="info">
+                    <div class="description">Free CF Growth Rate 6-10 years </div>
+                    <input type="text" id="growth10">
+                </div>
+                <div class="info">
+                    <div class="description">Free CF Growth Rate 11-20 years </div>
+                    <input type="text" id="growth20">
+                </div>
+                <div class="info">
+                    <div class="description">No. of Shares Outstanding </div>
+                    <input type="text" id="shares">
+                </div>
+                <div class="info">
+                    <div class="description">Discount Rate </div>
+                    <input type="text" id="discount">
+                </div>
+                <button onclick="count()">submit</button>
+            </div>
+            <div class="calculated">
+                <div class="title1">Outcome</div>
+                <div class="info">
+                    <div class="description">PV of 5yr Free CF </div>
+                    <input type="text" id="pv1">
+                </div>
+                <div class="info">
+                    <div class="description">PV of 10yr Free CF </div>
+                    <input type="text" id="pv2">
+                </div>
+                <div class="info">
+                    <div class="description">PV of 20yr Free CF </div>
+                    <input type="text" id="pv3">
+                </div>
+                <div class="info">
+                    <div class="description">Intrinsic Value before cash/debt </div>
+                    <input type="text" id="intrinsic-before">
+                </div>
+                <div class="info">
+                    <div class="description">Less Debt per Share </div>
+                    <input type="text" id="dps">
+                </div>
+                <div class="info">
+                    <div class="description">Plus(+) Cash per Share</div>
+                    <input type="text" id="plus">
+                </div>
+                <div class="info">
+                    <div class="description">Final Intrinsic Value per Share </div>
+                    <input type="text" id="intrinsic-final">
+                </div>
+            <div class="evaluation">
+                <div class="info">
+                    <div class="description" id="lastprice">Last Close </div>
+                    <input type="text" id="pricenow">
+                </div>
+                <div class="info">
+                    <div class="description" id="discount1">Discount (Premium) </div>
+                    <input type="text" id="premium">
+                </div>
+                <div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">@copyright</div>
+    <script src="app.js"></script>
+</body>
+</html>

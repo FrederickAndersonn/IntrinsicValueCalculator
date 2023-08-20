@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:wght@400;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: poppins;
+  background: rgba(26, 25, 48, 0.767);
+}
+
+.header {
+  background-color: rgb(94, 67, 67);
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
+  background: white;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}
+
+.informations {
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.putinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  padding-top: 10px;
+}
+
+.description {
+  padding-left: 10px;
+  width: 270px;
+  background: rgb(13, 15, 37);
+  border-radius: 4px;
+  color: aliceblue;
+}
+
+button {
+  background: rgb(179, 194, 209);
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.title1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+#discount1 {
+  background: rgb(119, 119, 101);
+}
+
+#lastprice {
+  background: rgb(119, 119, 101);
+}
+
+.evaluation {
+  padding-top: 30px;
+}
+
+.footer {
+  width: 100%;
+  background: black;
+  height: 100px;
+  bottom: 0;
+  position: absolute;
+}
